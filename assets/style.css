@@ -1,0 +1,175 @@
+:root {
+  color-scheme: dark;
+  color: #e8eef8;
+  background: #0b1220;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.frame {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px;
+  background: #0d1728;
+}
+
+.branding {
+  margin-bottom: 24px;
+}
+
+.branding strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.branding p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.search-container {
+  margin-bottom: 24px;
+}
+
+.search-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: #0b1220;
+  color: #e8eef8;
+  outline: none;
+}
+
+.content {
+  padding: 32px;
+  overflow-x: hidden;
+}
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.page-header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.page-meta {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.doc-content {
+  max-width: 860px;
+  line-height: 1.75;
+}
+
+.doc-content p {
+  color: #d8dee9;
+}
+
+.doc-content h2,
+.doc-content h3 {
+  color: #f8fafc;
+  margin-top: 2.2rem;
+}
+
+.doc-content pre,
+.doc-content code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.doc-content pre {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 18px;
+  overflow-x: auto;
+}
+
+.doc-content code {
+  background: rgba(148, 163, 184, 0.08);
+  padding: 0.2rem 0.35rem;
+  border-radius: 0.35rem;
+}
+
+.tree-root,
+.tree-root ul,
+.search-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tree-root li {
+  margin: 0.3rem 0;
+}
+
+.tree-directory > span {
+  display: inline-block;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.tree-file a,
+.search-list a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.tree-file a.active,
+.search-list a:hover {
+  color: #7dd3fc;
+}
+
+.search-results {
+  margin-top: 30px;
+}
+
+.search-results h2 {
+  margin-top: 0;
+}
+
+.search-results li {
+  margin-bottom: 18px;
+}
+
+.search-results p {
+  margin: 6px 0 0;
+  color: #94a3b8;
+}
+
+.home-intro {
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.home-summary {
+  margin-top: 16px;
+  font-size: 1rem;
+  color: #cbd5e1;
+}
